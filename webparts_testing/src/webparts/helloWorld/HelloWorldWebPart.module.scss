@@ -1,0 +1,43 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.helloWorld {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.formUserJffp {
+  --body-padding: 3rem 5rem 3rem 5rem;
+  --body-bg: "[theme:bodyBackground, default: #ffffff]";
+  --body-bg: var(--bodyBackground);
+  --body-color: "[theme:bodyText, default: #323130]";
+  --body-color: var(--bodyText);
+  --body-border: 1px solid  "[theme:bodyDivider, default: #323130]";
+  --body-border: 1px solid  var(--bodyDivider);
+  --body-border-radius: 0.1rem;
+
+
+  --button-bg: "[theme:buttonBackground, default: #ffffff]";
+  --button-bg: var(--buttonBackground);
+  --button-color:  "[theme:buttonText, default: #323130]";
+  --button-color:  var(--buttonText);
+  --button-border: 1px solid "[theme:buttonBorder, default: #323130]";
+  --button-border: 1px solid var(--buttonBorder);
+  --button-border-radius: 0.1rem;
+  --button-hover-color: "[theme:buttonBackgroundHovered, default: #00a2ed]";
+  --button-hover-color: var(--buttonBackgroundHovered);
+}
