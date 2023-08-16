@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue + TS</title>
+    <style>
+      html {
+        background-color: rgb(55 65 81);
+      }
+
+      my-vue-list {
+        --table-header-bg-color: rgb(31 41 55);
+        --table-header-color: rgb(242 242 242);
+        
+        --table-border: none;
+        --table-onhover-tr: rgb(242 242 242);
+        
+        --table-td-th-border: none;
+
+        --button-color: rgb(242 242 242);
+        --button-bg-color: rgb(31 41 55);
+        --font-family: "Helvetica";
+
+        --table-td-th-border-top: 1px solid rgb(242, 242, 242, 0.2);
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div id="app">
+      <my-vue-list 
+      :inputInfos='[
+      "name"
+      ]'
+      linkapi='http://localhost:3000/usersUniqueName/getAll' id name email work password address phone></my-vue-list>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
