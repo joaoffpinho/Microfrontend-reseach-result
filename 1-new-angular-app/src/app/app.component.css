@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:host {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.primeiro {
+    /* Styles for the first route when the screen size is less than or equal to 768px */
+  @media (max-width: 768px) {
+      width: 80%;
+      margin: auto;
+      margin-top: 4rem;
+    }
+
+  @media (min-width: 769px) {
+    width: 50%;
+    margin: auto;
+    margin-top: 4rem;
+  };
+}
+  
+.segundo {
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+}
+  

@@ -1,0 +1,36 @@
+<header class="bg-gray-900 text-goodWhite">
+  <div class="container  mx-auto px-4 py-2 flex flex-wrap items-center justify-between">
+    <div>
+      <button class="text-xl font-semibold" routerLink="">
+        <p>Web components testing</p>
+      </button>
+    </div>
+    <div class="flex items-center">
+      <button class="mx-4 hover:text-cyan-400" type="button" routerLink="/primeiro">Criar User</button>
+      <button class="mx-4 hover:text-rose-500" type="button" routerLink="/segundo">Tabela</button>
+    </div>
+  </div>
+</header>
+
+<div [ngClass]="currentRouteClass">
+  <router-outlet></router-outlet>
+</div>
+  
+<footer class="h-32 w-screen absolute bottom-0 bg-gray-900 text-goodWhite">
+  <div class="container m-auto p-4 flex flex-wrap items-center justify-between">
+    <div class="text-xl font-semibold" routerLink="">
+      Web components testing
+    </div>
+    <div class="flex items-center">
+      <div class="mx-4">
+        Github
+      </div>
+      <div class="mx-4">
+        Linkedin
+      </div>
+      <div class="mx-4">
+        \\(º-º)//
+      </div>
+    </div>
+  </div>
+</footer>

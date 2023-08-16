@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+my-vue-list {
+    --font-family: "Helvetica";
+    
+    --table-bg-color: rgb(17 24 39);
+    --table-color: rgb(242 242 242);
+    --table-border: none;
+    --table-width: 100%;
+
+    --table-td-th-border: none;
+    --table-td-th-border-top: 1px solid rgb(55, 65, 81);
+
+    --table-onhover-tr-bg-color: rgb(242 242 242);
+    --table-onhover-tr-color: rgb(31 41 55);
+
+    --table-header-bg-color: rgb(31 41 55);
+    --table-header-color: rgb(242 242 242);
+    
+    --button-bg-color: rgb(31 41 55);
+    --button-color: rgb(242 242 242);
+    
+    --button-bg-color-hover: rgb(17 24 39);
+}
