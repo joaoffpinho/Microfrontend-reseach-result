@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <!-- <script type="module"> import 'my-panel-jffp';</script> -->
+    <style>
+      my-panel-jffp {
+        --my-panel-jffp-primary-bg: aquamarine;
+        --my-panel-jffp-primary-color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello Lit</h1>
+
+    <script type="module">
+      import 'my-panel-jffp';
+
+      const el = document.querySelector('my-panel-jffp')
+      el.addEventListener('icon-click', function() {
+        console.log("icon-Clicked");
+      })
+    </script>
+
+    <my-panel-jffp title="My VanillaJS Profile" icon="1" opened>
+      <button>CLICK ME</button>
+    </my-panel-jffp>
+  </body>
+</html>
