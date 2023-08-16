@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Lit + TS</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="/src/form-user-jffp.ts"></script>
+    <style>
+      form-user-jffp {
+        --body-padding: 3rem 5rem 3rem 5rem;
+        --body-bg: #ffffff;
+        --body-color: #000000;
+        --body-border: 1px solid #000000;
+        --body-border-radius: 0.1rem;
+
+
+        --button-bg: #ffffff;
+        --button-color: #000000;
+        --button-border: 1px solid #000000;
+        --button-border-radius: 0.1rem;
+
+        --button-hover-color: #00a2ed;
+      }
+    </style>
+  </head>
+  <body>
+    <form-user-jffp 
+      inputLabels='[
+        {
+          "label":"Name",
+          "name": "name", 
+          "type": "text",
+          "value": "name",
+          "placeholder": "name",
+          "required": true
+        },
+        {
+          "label":"Email",
+          "name": "email", 
+          "type": "text",
+          "placeholder": "Not needed for the time being",
+          "disabled": true
+        }]' 
+      get-api-url="https://n5kv.sharepoint.com/sites/DeveloperSite/_api/web/lists/getbytitle(Users)/items">
+    </form-user-jffp>
+  </body>
+</html>
